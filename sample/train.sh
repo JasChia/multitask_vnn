@@ -1,17 +1,17 @@
 #!/bin/bash
 
-homedir="your_home_directory"
+homedir="$HOME/multitask_vnn"
 
 gene2idfile="${homedir}/sample/gene2ind.txt"
 cell2idfile="${homedir}/sample/cell2ind.txt"
 ontfile="${homedir}/sample/ontology.txt"
 mutationfile="${homedir}/sample/cell2mutation.txt"
-cn_deletionfile="${homedir}/samplecell2cndeletion.txt"
+cn_deletionfile="${homedir}/sample/cell2cndeletion.txt"
 cn_amplificationfile="${homedir}/sample/cell2cnamplification.txt"
-traindatafile="${homedir}/sample/training_data.txt"
+traindatafile="${homedir}/sample/train_data.txt"
 taskfile="${homedir}/sample/task_list_RS.txt"
 
-modeldir="${homedir}/model"
+modeldir="${homedir}/my_m_vnn_model"
 if [ -d $modeldir ]
 then
 	rm -rf $modeldir
